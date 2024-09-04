@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Diagram</title>
+
+    <style>
+
+        .margin{
+            background-color: rgb(255, 165, 0);
+            width: 400px;
+            height: 220px;
+            border: 1px black dotted;
+            padding-top:1px;
+            padding-bottom:30px;
+            padding-left: 10px;
+            padding-right:20px;
+        }
+
+        .border{
+            background-color: #ffff00;
+            width: 330px;
+            height: 150px;
+            margin: 30px;
+            margin-bottom: 30px;
+            border: 1px black solid;
+            padding: 15px;
+        }
+
+        #pad{
+            background-color: #84ee1a;
+            width: 280px;
+            height: 90px;
+            border: 1px black dotted;
+            padding: 15px;
+        }
+
+        #content{
+            background-color: hsl(191, 86%, 52%);
+            width: 220px;
+            height: 35px;
+            border: 1px black solid;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="margin">
+        <b >Margin</b>
+        <div class="border">
+            <b>Border</b>
+            <div id="pad">
+                <b>Padding</b>
+                <div id="content">
+                    <b>Content</b>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
